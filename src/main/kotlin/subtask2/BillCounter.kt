@@ -7,8 +7,8 @@ class BillCounter {
     fun calculateFairlySplit(bill: IntArray, k: Int, b: Int): String {
         val billSum=bill.sum()
         val annaBill=(billSum-bill[k])/2
-        return it (annaBill==b) {
-            "Bon Appetite"
+        return if (annaBill==b) {
+            "Bon Appetit"
         } else {
             if (annaBill>=b) {
                 "${annaBill-b}"
